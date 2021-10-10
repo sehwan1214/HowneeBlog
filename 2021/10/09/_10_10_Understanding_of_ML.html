@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Title | SehwanPark</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Title" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<link rel="canonical" href="https://sehwan1214.github.io/HowneeBlog/2021/10/09/_10_10_Understanding_of_ML.html" />
+<meta property="og:url" content="https://sehwan1214.github.io/HowneeBlog/2021/10/09/_10_10_Understanding_of_ML.html" />
+<meta property="og:site_name" content="SehwanPark" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-10-09T00:00:00-05:00" />
+<script type="application/ld+json">
+{"datePublished":"2021-10-09T00:00:00-05:00","url":"https://sehwan1214.github.io/HowneeBlog/2021/10/09/_10_10_Understanding_of_ML.html","@type":"BlogPosting","headline":"Title","dateModified":"2021-10-09T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://sehwan1214.github.io/HowneeBlog/2021/10/09/_10_10_Understanding_of_ML.html"},"description":"An easy to use blogging platform with support for Jupyter Notebooks.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/HowneeBlog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://sehwan1214.github.io/HowneeBlog/feed.xml" title="SehwanPark" /><link rel="shortcut icon" type="image/x-icon" href="/HowneeBlog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/HowneeBlog/">SehwanPark</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/HowneeBlog/about/">About Me</a><a class="page-link" href="/HowneeBlog/search/">Search</a><a class="page-link" href="/HowneeBlog/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Title</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-10-09T00:00:00-05:00" itemprop="datePublished">
+        Oct 9, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      7 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/sehwan1214/HowneeBlog/tree/master/_notebooks/2021_10_10_Understanding_of_ML.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/HowneeBlog/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/sehwan1214/HowneeBlog/master?filepath=_notebooks%2F2021_10_10_Understanding_of_ML.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/HowneeBlog/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/sehwan1214/HowneeBlog/blob/master/_notebooks/2021_10_10_Understanding_of_ML.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/HowneeBlog/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2021_10_10_Understanding_of_ML.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Understanding-of-Machine-Learning"><strong>Understanding of Machine Learning</strong><a class="anchor-link" href="#Understanding-of-Machine-Learning"> </a></h1><hr />
+<ol>
+<li>Classification of Machine Learning</li>
+<li>Numpy</li>
+<li>Data Handling - Pandas</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.-Classification-of-Machine-Learning"><strong>1. Classification of Machine Learning</strong><a class="anchor-link" href="#1.-Classification-of-Machine-Learning"> </a></h2><ul>
+<li><strong>Supervised - Learning</strong></li>
+</ul>
+<ol>
+<li>Classification</li>
+<li>Regression</li>
+<li>Recommendation System</li>
+<li>Visual/Speech recognition</li>
+<li>Text Analysis, NLP</li>
+</ol>
+<ul>
+<li><strong>Unsupervised - Learning</strong></li>
+</ul>
+<ol>
+<li>Clustering</li>
+<li>Dimension Reduction</li>
+<li>Reinforcement Learning</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="2.-Numpy"><strong>2. Numpy</strong><a class="anchor-link" href="#2.-Numpy"> </a></h2>
+<pre><code>Numpy, which means numerical Python, is a representative package that helps Python create linear algebra-based programs easily.
+Understanding Numpy is so important in python-based Machine Learning. 
+
+
+</code></pre>
+<ol>
+<li>Overview of Numpy</li>
+<li>Ndarray's data type</li>
+<li>Create ndarray comfortably - arange, zeros, ones</li>
+<li>To change the dimension and size of ndarray - reshape()</li>
+<li>Choose ndarray's dataset - indexing</li>
+<li>Sort of matrix - sort(), argsort()</li>
+<li>Linear algebra operation - Inner product and transposed matrix</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.-Overview-of-Numpy">1. Overview of Numpy<a class="anchor-link" href="#1.-Overview-of-Numpy"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Numpy-based data type = ndarray</li>
+<li>Shape -&gt; Form of a tuple(row,columns) </li>
+<li>ndarray.ndim</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">array1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array1 type: &#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">array1</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array1.shape: &#39;</span><span class="p">,</span> <span class="n">array1</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+<span class="n">array2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array2 type: &#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">array2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array2.shape: &#39;</span><span class="p">,</span> <span class="n">array2</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+<span class="n">array3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array3 type: &#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">array3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array3.shape: &#39;</span><span class="p">,</span> <span class="n">array3</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;array1: </span><span class="si">{0}</span><span class="s2">-dimensional, array2: </span><span class="si">{1}</span><span class="s2">-dimensional, array3: </span><span class="si">{2}</span><span class="s2">-dimensional&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">array1</span><span class="o">.</span><span class="n">ndim</span><span class="p">,</span> <span class="n">array2</span><span class="o">.</span><span class="n">ndim</span><span class="p">,</span> <span class="n">array3</span><span class="o">.</span><span class="n">ndim</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>array1 type:  &lt;class &#39;numpy.ndarray&#39;&gt;
+array1.shape:  (3,)
+array2 type:  &lt;class &#39;numpy.ndarray&#39;&gt;
+array2.shape:  (2, 3)
+array3 type:  &lt;class &#39;numpy.ndarray&#39;&gt;
+array3.shape:  (1, 3)
+array1: 1-dimensional, array2: 2-dimensional, array3: 2-dimensional
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="2.-ndarray's-data-type">2. ndarray's data type<a class="anchor-link" href="#2.-ndarray's-data-type"> </a></h3>
+<pre><code> Only the same data type can be used in ndarray 
+ If other data types are mixed, type conversion is applied to data types with larger data sizes</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>ndarray.dtype</li>
+<li>Type conversion is applied to data types with larger data sizes</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">list1</span><span class="p">))</span>
+<span class="n">array1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">list1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">array1</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">array1</span><span class="p">,</span> <span class="n">array1</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
+
+<span class="n">list2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;test&#39;</span><span class="p">]</span>
+<span class="n">array2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">list2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">array2</span><span class="p">,</span> <span class="n">array2</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
+
+<span class="n">list3</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">]</span>
+<span class="n">array3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">list3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">array3</span><span class="p">,</span> <span class="n">array3</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;class &#39;list&#39;&gt;
+&lt;class &#39;numpy.ndarray&#39;&gt;
+[1 2 3] int64
+[&#39;1&#39; &#39;2&#39; &#39;test&#39;] &lt;U21
+[1. 2. 3.] float64
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Change the type of data for saving memory -&gt; ndarray.astype </li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">array_int</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+<span class="n">array_float</span> <span class="o">=</span> <span class="n">array_int</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;float64&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">array_float</span><span class="p">,</span> <span class="n">array_float</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
+
+<span class="n">array_int1</span> <span class="o">=</span> <span class="n">array_float</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;int32&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">array_int1</span><span class="p">,</span> <span class="n">array_int1</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
+
+<span class="n">array_float1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">2.1</span><span class="p">,</span> <span class="mf">3.1</span><span class="p">])</span>
+<span class="n">array_int2</span> <span class="o">=</span> <span class="n">array_float1</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;int32&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">array_int2</span><span class="p">,</span> <span class="n">array_int2</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1. 2. 3.] float64
+[1 2 3] int32
+[1 2 3] int32
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="3.---Create-ndarray-comfortably---arange,-zeros,-ones">3.   Create ndarray comfortably - arange, zeros, ones<a class="anchor-link" href="#3.---Create-ndarray-comfortably---arange,-zeros,-ones"> </a></h3>
+<pre><code>Used to create data primarily for testing or to initialize large amounts of data collectively.</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>arange, zeros, ones</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">sequence_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sequence_array</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sequence_array</span><span class="o">.</span><span class="n">dtype</span><span class="p">,</span> <span class="n">sequence_array</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+<span class="n">zero_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;int32&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">zero_array</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">zero_array</span><span class="o">.</span><span class="n">dtype</span><span class="p">,</span> <span class="n">zero_array</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+<span class="n">one_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">one_array</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">one_array</span><span class="o">.</span><span class="n">dtype</span><span class="p">,</span> <span class="n">one_array</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0 1 2 3 4 5 6 7 8 9]
+int64 (10,)
+[[0 0]
+ [0 0]
+ [0 0]]
+int32 (3, 2)
+[[1. 1.]
+ [1. 1.]
+ [1. 1.]]
+float64 (3, 2)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.-To-change-the-dimension-and-size-of-ndarray---reshape()">4. To change the dimension and size of ndarray - reshape()<a class="anchor-link" href="#4.-To-change-the-dimension-and-size-of-ndarray---reshape()"> </a></h3>
+<pre><code>If -1 is used as a factor, it's going to be a new type that's compatible with ndarray. 
+reshape(-1,1) -&gt; ndarray must be converted into 2-dimensional in any form with 1 column no matter how many rows it has.
+                 In conclusion, converting to 1-dimensional arrangement.</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>reshape</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">array1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array1:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">array1</span><span class="p">)</span>
+
+<span class="n">array2</span> <span class="o">=</span> <span class="n">array1</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array2:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">array2</span><span class="p">)</span>
+
+<span class="n">array3</span> <span class="o">=</span> <span class="n">array1</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array3:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">array3</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>array1:
+ [0 1 2 3 4 5 6 7 8 9]
+array2:
+ [[0 1 2 3 4]
+ [5 6 7 8 9]]
+array3:
+ [[0 1]
+ [2 3]
+ [4 5]
+ [6 7]
+ [8 9]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Use -1 factor in reshape</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">array1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">array1</span><span class="p">)</span>
+<span class="n">array2</span> <span class="o">=</span> <span class="n">array1</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array2.shape:&#39;</span><span class="p">,</span> <span class="n">array2</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="n">array3</span> <span class="o">=</span> <span class="n">array1</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array3.shape:&#39;</span><span class="p">,</span> <span class="n">array3</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0 1 2 3 4 5 6 7 8 9]
+array2.shape: (2, 5)
+array3.shape: (5, 2)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>reshape(-1, 1)</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">array1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">array3d</span> <span class="o">=</span> <span class="n">array1</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array3d:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">array3d</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+
+<span class="c1"># 3-dimensional -&gt; 2-dimensional</span>
+<span class="n">array5</span> <span class="o">=</span> <span class="n">array3d</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array5:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">array5</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array5.shape:&#39;</span><span class="p">,</span> <span class="n">array5</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+<span class="c1">#1-dimensional -&gt; 2-dimensional</span>
+<span class="n">array6</span> <span class="o">=</span> <span class="n">array1</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array6:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">array6</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array6.shape:&#39;</span><span class="p">,</span> <span class="n">array6</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>array3d:
+ [[[0, 1], [2, 3]], [[4, 5], [6, 7]]]
+array5:
+ [[0], [1], [2], [3], [4], [5], [6], [7]]
+array5.shape: (8, 1)
+array6:
+ [[0], [1], [2], [3], [4], [5], [6], [7]]
+array6.shape: (8, 1)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="5.---Choose-ndarray's-dataset---indexing">5.   Choose ndarray's dataset - indexing<a class="anchor-link" href="#5.---Choose-ndarray's-dataset---indexing"> </a></h3>
+<pre><code>* Extract only specific data: Specify the desired index value, return the location data.
+* Slicing: Extracting ndarrays on a continuous index.
+* Fancy indexing: A certain set of indexes is designated in the form of a list or ndarray and returns the ndarray of the data in the corresponding location.
+* Boolean indexing: Returns the end of data at the index location corresponding to the true based on a set of true/false value indexes that correspond to a specific condition.</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Extract only specific data</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">array1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array1:&#39;</span><span class="p">,</span> <span class="n">array1</span><span class="p">)</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">array1</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;value:&#39;</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The first value from the back: </span><span class="si">{0}</span><span class="s1">, The second value from the back: </span><span class="si">{1}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">array1</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span><span class="n">array1</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>array1: [1 2 3 4 5 6 7 8 9]
+value: 3
+&lt;class &#39;numpy.int64&#39;&gt;
+The first value from the back: 9, The second value from the back: 8
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">array2d</span> <span class="o">=</span> <span class="n">array1</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">array2d</span><span class="p">)</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">array2d</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array2d[1,1]:&#39;</span><span class="p">,</span><span class="n">value</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[[1 2 3]
+ [4 5 6]
+ [7 8 9]]
+array2d[1,1]: 5
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Slicing</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">array1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">array3</span> <span class="o">=</span> <span class="n">array1</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">array3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">array3</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1 2 3]
+&lt;class &#39;numpy.ndarray&#39;&gt;
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">array4</span> <span class="o">=</span> <span class="n">array1</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">array4</span><span class="p">)</span>
+<span class="n">array5</span> <span class="o">=</span> <span class="n">array1</span><span class="p">[</span><span class="mi">3</span><span class="p">:]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">array5</span><span class="p">)</span>
+<span class="n">array6</span> <span class="o">=</span> <span class="n">array1</span><span class="p">[:]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">array6</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1 2 3]
+[4 5 6 7 8 9]
+[1 2 3 4 5 6 7 8 9]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array2d:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">array2d</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array2d[0:2,0:2]:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">array2d</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array2d[1:3,0:3]:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">array2d</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array2d[:,:]:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">array2d</span><span class="p">[:,:])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>array2d:
+ [[1 2 3]
+ [4 5 6]
+ [7 8 9]]
+array2d[0:2,0:2]:
+ [[1 2]
+ [4 5]]
+array2d[1:3,0:3]:
+ [[4 5 6]
+ [7 8 9]]
+array2d[:,:]:
+ [[1 2 3]
+ [4 5 6]
+ [7 8 9]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">array2d</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">array2d</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array2d[0].shape:&#39;</span><span class="p">,</span> <span class="n">array2d</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="s1">&#39;array2d[1].shape:&#39;</span><span class="p">,</span><span class="n">array2d</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1 2 3]
+[4 5 6]
+array2d[0].shape: (3,) array2d[1].shape: (3,)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Fancy indexing</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">array1d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">array2d</span> <span class="o">=</span> <span class="n">array1d</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="n">array3</span> <span class="o">=</span> <span class="n">array2d</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span><span class="mi">2</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array2d[[0,1],2] =&gt; &#39;</span><span class="p">,</span> <span class="n">array3</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+
+<span class="n">array4</span> <span class="o">=</span> <span class="n">array2d</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array2d[[0,1],0:2] =&gt; &#39;</span><span class="p">,</span> <span class="n">array4</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+
+<span class="n">array5</span> <span class="o">=</span> <span class="n">array2d</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array2d[[0,1]] =&gt; &#39;</span><span class="p">,</span> <span class="n">array5</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>array2d[[0,1],2] =&gt;  [3, 6]
+array2d[[0,1],0:2] =&gt;  [[1, 2], [4, 5]]
+array2d[[0,1]] =&gt;  [[1, 2, 3], [4, 5, 6]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Boolean indexing</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">array1d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array1d:&#39;</span><span class="p">,</span> <span class="n">array1d</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array1d&gt;5:&#39;</span><span class="p">,</span> <span class="n">array1d</span><span class="o">&gt;</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">array3</span> <span class="o">=</span> <span class="n">array1d</span><span class="p">[</span><span class="n">array1d</span><span class="o">&gt;</span><span class="mi">5</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array1d&gt;5 boolean indexing values:&#39;</span><span class="p">,</span> <span class="n">array3</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>array1d: [1 2 3 4 5 6 7 8 9]
+array1d&gt;5: [False False False False False  True  True  True  True]
+array1d&gt;5 boolean indexing values: [6 7 8 9]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">indexes1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">])</span>
+<span class="n">indexes2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">]</span>
+<span class="n">array4_1</span> <span class="o">=</span> <span class="n">array1d</span><span class="p">[</span><span class="n">indexes1</span><span class="p">]</span>
+<span class="n">array4_2</span> <span class="o">=</span> <span class="n">array1d</span><span class="p">[</span><span class="n">indexes2</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">array4_1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">array4_2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[6 7 8 9]
+[6 7 8 9]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="6.-Sort-of-matrix---sort(),-argsort()">6. Sort of matrix - sort(), argsort()<a class="anchor-link" href="#6.-Sort-of-matrix---sort(),-argsort()"> </a></h3>
+<pre><code>default = ascending sort
+ex) [3,1,9,5] -&gt; [1,3,5,9]    
+Sort by raw or column using axis
+argsort() -&gt; Use when an original matrix is sorted and an index for an element of an existing original matrix is required.
+             Very useful in Numpy</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>ndarray.sort()</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">org_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;original_array:&quot;</span><span class="p">,</span> <span class="n">org_array</span><span class="p">)</span>
+
+<span class="n">sort_array_1</span> <span class="o">=</span> <span class="n">org_array</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;original_array:&quot;</span><span class="p">,</span> <span class="n">org_array</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;sort_array1:&quot;</span><span class="p">,</span> <span class="n">sort_array_1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>original_array: [3 1 9 5]
+original_array: [1 3 5 9]
+sort_array1: None
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>np.sort()</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">org_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;original_array:&quot;</span><span class="p">,</span> <span class="n">org_array</span><span class="p">)</span>
+
+<span class="n">sort_array_2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">org_array</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;original_array:&quot;</span><span class="p">,</span> <span class="n">org_array</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;sort_array2:&quot;</span><span class="p">,</span> <span class="n">sort_array_1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>original_array: [3 1 9 5]
+original_array: [3 1 9 5]
+sort_array2: None
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Descending sort -&gt; np.sort[::-1]</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">sort_array1_desc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">org_array</span><span class="p">)[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Descending sort array:&quot;</span><span class="p">,</span> <span class="n">sort_array1_desc</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Descending sort array: [9 5 3 1]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Sort the 2-dimensional or higher matrix</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">array2d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">8</span><span class="p">,</span><span class="mi">12</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array2d:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">array2d</span><span class="p">)</span>
+
+<span class="n">sort_array2d_axis0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">array2d</span><span class="p">,</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Sorted by raw(axis=0):</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">sort_array2d_axis0</span><span class="p">)</span>
+
+<span class="n">sort_array2d_axis1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">array2d</span><span class="p">,</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Sorted by column(axis=1):</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">sort_array2d_axis1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>array2d:
+ [[ 8 12]
+ [ 7  1]]
+Sorted by raw(axis=0):
+ [[ 7  1]
+ [ 8 12]]
+Sorted by column(axis=1):
+ [[ 8 12]
+ [ 1  7]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>argsort() </li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">org_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
+<span class="n">sort_indices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">org_array</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">sort_indices</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">org_array</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sort_array_2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;index for an element of an existing original matrix when it is ascending sorted:&#39;</span><span class="p">,</span> <span class="n">sort_indices</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;class &#39;numpy.ndarray&#39;&gt;
+[3 1 9 5]
+[1 3 5 9]
+index for an element of an existing original matrix when it is sorted: [1 0 3 2]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">org_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
+<span class="n">sort_indices_desc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">org_array</span><span class="p">)[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">sort_indices</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">org_array</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sort_array1_desc</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;index for an element of an existing original matrix when it is descending sorted:&#39;</span><span class="p">,</span> <span class="n">sort_indices_desc</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;class &#39;numpy.ndarray&#39;&gt;
+[3 1 9 5]
+[9 5 3 1]
+index for an element of an existing original matrix when it is descending sorted: [2 3 0 1]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="7.---Linear-algebra-operation---Inner-product-and-transposed-matrix">7.   Linear algebra operation - Inner product and transposed matrix<a class="anchor-link" href="#7.---Linear-algebra-operation---Inner-product-and-transposed-matrix"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Internal -&gt; np.dot()</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]])</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">],[</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">],[</span><span class="mi">11</span><span class="p">,</span><span class="mi">12</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Inner product result:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Inner product result:
+ [[ 58  64]
+ [139 154]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Transposed matrix</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]])</span>
+<span class="n">transpose_mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span> <span class="n">transpose</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Transposed matrix:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">transpose_mat</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Transposed matrix:
+ [[1 3]
+ [2 4]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><a class="u-url" href="/HowneeBlog/2021/10/09/_10_10_Understanding_of_ML.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/HowneeBlog/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/HowneeBlog/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/HowneeBlog/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" title="fastai"><svg class="svg-icon grey"><use xlink:href="/HowneeBlog/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/HowneeBlog/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
