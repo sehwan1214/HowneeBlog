@@ -4,19 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Title | SehwanPark</title>
+<title>Machine Learning Study | SehwanPark</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Title" />
+<meta property="og:title" content="Machine Learning Study" />
+<meta name="author" content="Sehwan" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<link rel="canonical" href="https://sehwan1214.github.io/HowneeBlog/2021/10/16/_10_10_Understanding_of_ML.html" />
-<meta property="og:url" content="https://sehwan1214.github.io/HowneeBlog/2021/10/16/_10_10_Understanding_of_ML.html" />
+<meta name="description" content="Understanding of Machine Learning" />
+<meta property="og:description" content="Understanding of Machine Learning" />
+<link rel="canonical" href="https://sehwan1214.github.io/HowneeBlog/jupyter/machine%20learning/2021/10/16/_10_10_Understanding_of_ML.html" />
+<meta property="og:url" content="https://sehwan1214.github.io/HowneeBlog/jupyter/machine%20learning/2021/10/16/_10_10_Understanding_of_ML.html" />
 <meta property="og:site_name" content="SehwanPark" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-10-16T00:00:00-05:00" />
 <script type="application/ld+json">
-{"datePublished":"2021-10-16T00:00:00-05:00","url":"https://sehwan1214.github.io/HowneeBlog/2021/10/16/_10_10_Understanding_of_ML.html","@type":"BlogPosting","headline":"Title","dateModified":"2021-10-16T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://sehwan1214.github.io/HowneeBlog/2021/10/16/_10_10_Understanding_of_ML.html"},"description":"An easy to use blogging platform with support for Jupyter Notebooks.","@context":"https://schema.org"}</script>
+{"datePublished":"2021-10-16T00:00:00-05:00","url":"https://sehwan1214.github.io/HowneeBlog/jupyter/machine%20learning/2021/10/16/_10_10_Understanding_of_ML.html","@type":"BlogPosting","headline":"Machine Learning Study","dateModified":"2021-10-16T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://sehwan1214.github.io/HowneeBlog/jupyter/machine%20learning/2021/10/16/_10_10_Understanding_of_ML.html"},"author":{"@type":"Person","name":"Sehwan"},"description":"Understanding of Machine Learning","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/HowneeBlog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://sehwan1214.github.io/HowneeBlog/feed.xml" title="SehwanPark" /><link rel="shortcut icon" type="image/x-icon" href="/HowneeBlog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -71,9 +72,11 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Title</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-10-16T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Machine Learning Study</h1><p class="page-description">Understanding of Machine Learning</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-10-16T00:00:00-05:00" itemprop="datePublished">
         Oct 16, 2021
-      </time>
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Sehwan</span></span>
        • <span class="read-time" title="Estimated read time">
     
     
@@ -81,6 +84,16 @@ window.onload = wrap_img;
     
 </span></p>
 
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/HowneeBlog/categories/#jupyter">jupyter</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/HowneeBlog/categories/#Machine Learning">Machine Learning</a>
+        
+      
+      </p>
     
 
     
@@ -108,7 +121,32 @@ window.onload = wrap_img;
       </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <!--
+    <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#1.-Classification-of-Machine-Learning">1. Classification of Machine Learning </a></li>
+<li class="toc-entry toc-h2"><a href="#2.-Numpy">2. Numpy </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#1.-Overview-of-Numpy">1. Overview of Numpy </a></li>
+<li class="toc-entry toc-h3"><a href="#2.-ndarray's-data-type">2. ndarray&#39;s data type </a></li>
+<li class="toc-entry toc-h3"><a href="#3.---Create-ndarray-comfortably---arange,-zeros,-ones">3.   Create ndarray comfortably - arange, zeros, ones </a></li>
+<li class="toc-entry toc-h3"><a href="#4.-To-change-the-dimension-and-size-of-ndarray---reshape()">4. To change the dimension and size of ndarray - reshape() </a></li>
+<li class="toc-entry toc-h3"><a href="#5.---Choose-ndarray's-dataset---indexing">5.   Choose ndarray&#39;s dataset - indexing </a></li>
+<li class="toc-entry toc-h3"><a href="#6.-Sort-of-matrix---sort(),-argsort()">6. Sort of matrix - sort(), argsort() </a></li>
+<li class="toc-entry toc-h3"><a href="#7.---Linear-algebra-operation---Inner-product-and-transposed-matrix">7.   Linear algebra operation - Inner product and transposed matrix </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#3.---Data-Handling---Pandas">3.   Data Handling - Pandas </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#1.-Pandas---fundamental-API">1. Pandas - fundamental API </a></li>
+<li class="toc-entry toc-h3"><a href="#2.---Transforming-between-DataFrame,-List,-Dictionary-and-ndarray">2.   Transforming between DataFrame, List, Dictionary and ndarray </a></li>
+<li class="toc-entry toc-h3"><a href="#3.-Delete-Data">3. Delete Data </a></li>
+<li class="toc-entry toc-h3"><a href="#4.-Index">4. Index </a></li>
+<li class="toc-entry toc-h3"><a href="#5.---Data-Selection-and-Filtering">5.   Data Selection and Filtering </a></li>
+<li class="toc-entry toc-h3"><a href="#6.---Sorting,-Aggregation,-GroupBy">6.   Sorting, Aggregation, GroupBy </a></li>
+<li class="toc-entry toc-h3"><a href="#7.---Process-missing-data">7.   Process missing data </a></li>
+<li class="toc-entry toc-h3"><a href="#8.---Data-processing-with-apply-lambda">8.   Data processing with apply lambda </a></li>
+</ul>
+</li>
+</ul><!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
@@ -117,21 +155,13 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Understanding-of-Machine-Learning"><strong>Understanding of Machine Learning</strong><a class="anchor-link" href="#Understanding-of-Machine-Learning"> </a></h1><hr />
-<ol>
-<li>Classification of Machine Learning</li>
-<li>Numpy</li>
-<li>Data Handling - Pandas</li>
-</ol>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="1.-Classification-of-Machine-Learning"><strong>1. Classification of Machine Learning</strong><a class="anchor-link" href="#1.-Classification-of-Machine-Learning"> </a></h2><ul>
+<h2 id="1.-Classification-of-Machine-Learning">
+<a class="anchor" href="#1.-Classification-of-Machine-Learning" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>1. Classification of Machine Learning</strong><a class="anchor-link" href="#1.-Classification-of-Machine-Learning"> </a>
+</h2>
+<ul>
 <li><strong>Supervised - Learning</strong></li>
 </ul>
 <ol>
@@ -153,9 +183,12 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="2.-Numpy"><strong>2. Numpy</strong><a class="anchor-link" href="#2.-Numpy"> </a></h2>
+<h2 id="2.-Numpy">
+<a class="anchor" href="#2.-Numpy" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>2. Numpy</strong><a class="anchor-link" href="#2.-Numpy"> </a>
+</h2>
 <pre><code>Numpy, which means numerical Python, is a representative package that helps Python create linear algebra-based programs easily.
 Understanding Numpy is so important in python-based Machine Learning. 
 
@@ -174,13 +207,17 @@ Understanding Numpy is so important in python-based Machine Learning.
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.-Overview-of-Numpy">1. Overview of Numpy<a class="anchor-link" href="#1.-Overview-of-Numpy"> </a></h3>
+<h3 id="1.-Overview-of-Numpy">
+<a class="anchor" href="#1.-Overview-of-Numpy" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. Overview of Numpy<a class="anchor-link" href="#1.-Overview-of-Numpy"> </a>
+</h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Numpy-based data type = ndarray</li>
@@ -200,18 +237,18 @@ Understanding Numpy is so important in python-based Machine Learning.
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="n">array1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array1 type: &#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">array1</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array1.shape: &#39;</span><span class="p">,</span> <span class="n">array1</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'array1 type: '</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">array1</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'array1.shape: '</span><span class="p">,</span> <span class="n">array1</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 
 <span class="n">array2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array2 type: &#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">array2</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array2.shape: &#39;</span><span class="p">,</span> <span class="n">array2</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'array2 type: '</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">array2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'array2.shape: '</span><span class="p">,</span> <span class="n">array2</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 
 <span class="n">array3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array3 type: &#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">array3</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array3.shape: &#39;</span><span class="p">,</span> <span class="n">array3</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'array3 type: '</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">array3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'array3.shape: '</span><span class="p">,</span> <span class="n">array3</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;array1: </span><span class="si">{0}</span><span class="s2">-dimensional, array2: </span><span class="si">{1}</span><span class="s2">-dimensional, array3: </span><span class="si">{2}</span><span class="s2">-dimensional&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">array1</span><span class="o">.</span><span class="n">ndim</span><span class="p">,</span> <span class="n">array2</span><span class="o">.</span><span class="n">ndim</span><span class="p">,</span> <span class="n">array3</span><span class="o">.</span><span class="n">ndim</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"array1: </span><span class="si">{0}</span><span class="s2">-dimensional, array2: </span><span class="si">{1}</span><span class="s2">-dimensional, array3: </span><span class="si">{2}</span><span class="s2">-dimensional"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">array1</span><span class="o">.</span><span class="n">ndim</span><span class="p">,</span> <span class="n">array2</span><span class="o">.</span><span class="n">ndim</span><span class="p">,</span> <span class="n">array3</span><span class="o">.</span><span class="n">ndim</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -224,11 +261,11 @@ Understanding Numpy is so important in python-based Machine Learning.
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>array1 type:  &lt;class &#39;numpy.ndarray&#39;&gt;
+<pre>array1 type:  &lt;class 'numpy.ndarray'&gt;
 array1.shape:  (3,)
-array2 type:  &lt;class &#39;numpy.ndarray&#39;&gt;
+array2 type:  &lt;class 'numpy.ndarray'&gt;
 array2.shape:  (2, 3)
-array3 type:  &lt;class &#39;numpy.ndarray&#39;&gt;
+array3 type:  &lt;class 'numpy.ndarray'&gt;
 array3.shape:  (1, 3)
 array1: 1-dimensional, array2: 2-dimensional, array3: 2-dimensional
 </pre>
@@ -241,16 +278,20 @@ array1: 1-dimensional, array2: 2-dimensional, array3: 2-dimensional
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.-ndarray's-data-type">2. ndarray's data type<a class="anchor-link" href="#2.-ndarray's-data-type"> </a></h3>
+<h3 id="2.-ndarray's-data-type">
+<a class="anchor" href="#2.-ndarray's-data-type" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. ndarray's data type<a class="anchor-link" href="#2.-ndarray's-data-type"> </a>
+</h3>
 <pre><code> Only the same data type can be used in ndarray 
  If other data types are mixed, type conversion is applied to data types with larger data sizes</code></pre>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>ndarray.dtype()
@@ -274,7 +315,7 @@ array1: 1-dimensional, array2: 2-dimensional, array3: 2-dimensional
 <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">array1</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">array1</span><span class="p">,</span> <span class="n">array1</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
 
-<span class="n">list2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;test&#39;</span><span class="p">]</span>
+<span class="n">list2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'test'</span><span class="p">]</span>
 <span class="n">array2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">list2</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">array2</span><span class="p">,</span> <span class="n">array2</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
 
@@ -293,10 +334,10 @@ array1: 1-dimensional, array2: 2-dimensional, array3: 2-dimensional
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;class &#39;list&#39;&gt;
-&lt;class &#39;numpy.ndarray&#39;&gt;
+<pre>&lt;class 'list'&gt;
+&lt;class 'numpy.ndarray'&gt;
 [1 2 3] int64
-[&#39;1&#39; &#39;2&#39; &#39;test&#39;] &lt;U21
+['1' '2' 'test'] &lt;U21
 [1. 2. 3.] float64
 </pre>
 </div>
@@ -308,7 +349,8 @@ array1: 1-dimensional, array2: 2-dimensional, array3: 2-dimensional
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>ndarray.astype()
@@ -327,14 +369,14 @@ array1: 1-dimensional, array2: 2-dimensional, array3: 2-dimensional
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">array_int</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
-<span class="n">array_float</span> <span class="o">=</span> <span class="n">array_int</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;float64&#39;</span><span class="p">)</span>
+<span class="n">array_float</span> <span class="o">=</span> <span class="n">array_int</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">'float64'</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">array_float</span><span class="p">,</span> <span class="n">array_float</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
 
-<span class="n">array_int1</span> <span class="o">=</span> <span class="n">array_float</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;int32&#39;</span><span class="p">)</span>
+<span class="n">array_int1</span> <span class="o">=</span> <span class="n">array_float</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">'int32'</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">array_int1</span><span class="p">,</span> <span class="n">array_int1</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
 
 <span class="n">array_float1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">2.1</span><span class="p">,</span> <span class="mf">3.1</span><span class="p">])</span>
-<span class="n">array_int2</span> <span class="o">=</span> <span class="n">array_float1</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;int32&#39;</span><span class="p">)</span>
+<span class="n">array_int2</span> <span class="o">=</span> <span class="n">array_float1</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">'int32'</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">array_int2</span><span class="p">,</span> <span class="n">array_int2</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
 </pre></div>
 
@@ -361,15 +403,19 @@ array1: 1-dimensional, array2: 2-dimensional, array3: 2-dimensional
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="3.---Create-ndarray-comfortably---arange,-zeros,-ones">3.   Create ndarray comfortably - arange, zeros, ones<a class="anchor-link" href="#3.---Create-ndarray-comfortably---arange,-zeros,-ones"> </a></h3>
+<h3 id="3.---Create-ndarray-comfortably---arange,-zeros,-ones">
+<a class="anchor" href="#3.---Create-ndarray-comfortably---arange,-zeros,-ones" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.   Create ndarray comfortably - arange, zeros, ones<a class="anchor-link" href="#3.---Create-ndarray-comfortably---arange,-zeros,-ones"> </a>
+</h3>
 <pre><code>Used to create data primarily for testing or to initialize large amounts of data collectively.</code></pre>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>arange, zeros, ones</li>
@@ -389,7 +435,7 @@ array1: 1-dimensional, array2: 2-dimensional, array3: 2-dimensional
 <span class="nb">print</span><span class="p">(</span><span class="n">sequence_array</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">sequence_array</span><span class="o">.</span><span class="n">dtype</span><span class="p">,</span> <span class="n">sequence_array</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 
-<span class="n">zero_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;int32&#39;</span><span class="p">)</span>
+<span class="n">zero_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">'int32'</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">zero_array</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">zero_array</span><span class="o">.</span><span class="n">dtype</span><span class="p">,</span> <span class="n">zero_array</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 
@@ -428,9 +474,12 @@ float64 (3, 2)
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="4.-To-change-the-dimension-and-size-of-ndarray---reshape()">4. To change the dimension and size of ndarray - reshape()<a class="anchor-link" href="#4.-To-change-the-dimension-and-size-of-ndarray---reshape()"> </a></h3>
+<h3 id="4.-To-change-the-dimension-and-size-of-ndarray---reshape()">
+<a class="anchor" href="#4.-To-change-the-dimension-and-size-of-ndarray---reshape()" aria-hidden="true"><span class="octicon octicon-link"></span></a>4. To change the dimension and size of ndarray - reshape()<a class="anchor-link" href="#4.-To-change-the-dimension-and-size-of-ndarray---reshape()"> </a>
+</h3>
 <pre><code>If -1 is used as a factor, it's going to be a new type that's compatible with ndarray. 
 reshape(-1,1) -&gt; ndarray must be converted into 2-dimensional in any form with 1 column no matter how many rows it has.
                  In conclusion, converting to 1-dimensional arrangement.</code></pre>
@@ -438,7 +487,8 @@ reshape(-1,1) -&gt; ndarray must be converted into 2-dimensional in any form wit
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>reshape</li>
@@ -455,13 +505,13 @@ reshape(-1,1) -&gt; ndarray must be converted into 2-dimensional in any form wit
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">array1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array1:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">array1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'array1:</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="n">array1</span><span class="p">)</span>
 
 <span class="n">array2</span> <span class="o">=</span> <span class="n">array1</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array2:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">array2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'array2:</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="n">array2</span><span class="p">)</span>
 
 <span class="n">array3</span> <span class="o">=</span> <span class="n">array1</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array3:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">array3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'array3:</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="n">array3</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -495,7 +545,8 @@ array3:
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Use -1 factor in reshape</li>
@@ -514,9 +565,9 @@ array3:
 <div class=" highlight hl-python"><pre><span></span><span class="n">array1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">array1</span><span class="p">)</span>
 <span class="n">array2</span> <span class="o">=</span> <span class="n">array1</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array2.shape:&#39;</span><span class="p">,</span> <span class="n">array2</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'array2.shape:'</span><span class="p">,</span> <span class="n">array2</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 <span class="n">array3</span> <span class="o">=</span> <span class="n">array1</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array3.shape:&#39;</span><span class="p">,</span> <span class="n">array3</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'array3.shape:'</span><span class="p">,</span> <span class="n">array3</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -542,7 +593,8 @@ array3.shape: (5, 2)
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>reshape(-1, 1)</li>
@@ -560,17 +612,17 @@ array3.shape: (5, 2)
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">array1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
 <span class="n">array3d</span> <span class="o">=</span> <span class="n">array1</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array3d:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">array3d</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'array3d:</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="n">array3d</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
 
 <span class="c1"># 3-dimensional -&gt; 2-dimensional</span>
 <span class="n">array5</span> <span class="o">=</span> <span class="n">array3d</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array5:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">array5</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array5.shape:&#39;</span><span class="p">,</span> <span class="n">array5</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'array5:</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="n">array5</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'array5.shape:'</span><span class="p">,</span> <span class="n">array5</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 
 <span class="c1">#1-dimensional -&gt; 2-dimensional</span>
 <span class="n">array6</span> <span class="o">=</span> <span class="n">array1</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array6:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">array6</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array6.shape:&#39;</span><span class="p">,</span> <span class="n">array6</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'array6:</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="n">array6</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'array6.shape:'</span><span class="p">,</span> <span class="n">array6</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -601,9 +653,12 @@ array6.shape: (8, 1)
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="5.---Choose-ndarray's-dataset---indexing">5.   Choose ndarray's dataset - indexing<a class="anchor-link" href="#5.---Choose-ndarray's-dataset---indexing"> </a></h3>
+<h3 id="5.---Choose-ndarray's-dataset---indexing">
+<a class="anchor" href="#5.---Choose-ndarray's-dataset---indexing" aria-hidden="true"><span class="octicon octicon-link"></span></a>5.   Choose ndarray's dataset - indexing<a class="anchor-link" href="#5.---Choose-ndarray's-dataset---indexing"> </a>
+</h3>
 <pre><code>* Extract only specific data: Specify the desired index value, return the location data.
 * Slicing: Extracting ndarrays on a continuous index.
 * Fancy indexing: A certain set of indexes is designated in the form of a list or ndarray and returns the ndarray of the data in the corresponding location.
@@ -612,7 +667,8 @@ array6.shape: (8, 1)
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Extract only specific data</li>
@@ -629,11 +685,11 @@ array6.shape: (8, 1)
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">array1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array1:&#39;</span><span class="p">,</span> <span class="n">array1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'array1:'</span><span class="p">,</span> <span class="n">array1</span><span class="p">)</span>
 <span class="n">value</span> <span class="o">=</span> <span class="n">array1</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;value:&#39;</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'value:'</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The first value from the back: </span><span class="si">{0}</span><span class="s1">, The second value from the back: </span><span class="si">{1}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">array1</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span><span class="n">array1</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'The first value from the back: </span><span class="si">{0}</span><span class="s1">, The second value from the back: </span><span class="si">{1}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">array1</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span><span class="n">array1</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]))</span>
 </pre></div>
 
     </div>
@@ -648,7 +704,7 @@ array6.shape: (8, 1)
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>array1: [1 2 3 4 5 6 7 8 9]
 value: 3
-&lt;class &#39;numpy.int64&#39;&gt;
+&lt;class 'numpy.int64'&gt;
 The first value from the back: 9, The second value from the back: 8
 </pre>
 </div>
@@ -670,7 +726,7 @@ The first value from the back: 9, The second value from the back: 8
 <div class=" highlight hl-python"><pre><span></span><span class="n">array2d</span> <span class="o">=</span> <span class="n">array1</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">array2d</span><span class="p">)</span>
 <span class="n">value</span> <span class="o">=</span> <span class="n">array2d</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array2d[1,1]:&#39;</span><span class="p">,</span><span class="n">value</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'array2d[1,1]:'</span><span class="p">,</span><span class="n">value</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -697,7 +753,8 @@ array2d[1,1]: 5
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Slicing</li>
@@ -730,7 +787,7 @@ array2d[1,1]: 5
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[1 2 3]
-&lt;class &#39;numpy.ndarray&#39;&gt;
+&lt;class 'numpy.ndarray'&gt;
 </pre>
 </div>
 </div>
@@ -786,10 +843,10 @@ array2d[1,1]: 5
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array2d:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">array2d</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array2d[0:2,0:2]:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">array2d</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array2d[1:3,0:3]:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">array2d</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array2d[:,:]:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">array2d</span><span class="p">[:,:])</span>
+<div class=" highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'array2d:</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="n">array2d</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'array2d[0:2,0:2]:</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span><span class="n">array2d</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'array2d[1:3,0:3]:</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span><span class="n">array2d</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'array2d[:,:]:</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span><span class="n">array2d</span><span class="p">[:,:])</span>
 </pre></div>
 
     </div>
@@ -835,7 +892,7 @@ array2d[:,:]:
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">array2d</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">array2d</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array2d[0].shape:&#39;</span><span class="p">,</span> <span class="n">array2d</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="s1">&#39;array2d[1].shape:&#39;</span><span class="p">,</span><span class="n">array2d</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'array2d[0].shape:'</span><span class="p">,</span> <span class="n">array2d</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="s1">'array2d[1].shape:'</span><span class="p">,</span><span class="n">array2d</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -861,7 +918,8 @@ array2d[0].shape: (3,) array2d[1].shape: (3,)
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Fancy indexing</li>
@@ -881,13 +939,13 @@ array2d[0].shape: (3,) array2d[1].shape: (3,)
 <span class="n">array2d</span> <span class="o">=</span> <span class="n">array1d</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
 
 <span class="n">array3</span> <span class="o">=</span> <span class="n">array2d</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span><span class="mi">2</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array2d[[0,1],2] =&gt; &#39;</span><span class="p">,</span> <span class="n">array3</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'array2d[[0,1],2] =&gt; '</span><span class="p">,</span> <span class="n">array3</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
 
 <span class="n">array4</span> <span class="o">=</span> <span class="n">array2d</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array2d[[0,1],0:2] =&gt; &#39;</span><span class="p">,</span> <span class="n">array4</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'array2d[[0,1],0:2] =&gt; '</span><span class="p">,</span> <span class="n">array4</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
 
 <span class="n">array5</span> <span class="o">=</span> <span class="n">array2d</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array2d[[0,1]] =&gt; &#39;</span><span class="p">,</span> <span class="n">array5</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'array2d[[0,1]] =&gt; '</span><span class="p">,</span> <span class="n">array5</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
 </pre></div>
 
     </div>
@@ -913,7 +971,8 @@ array2d[[0,1]] =&gt;  [[1, 2, 3], [4, 5, 6]]
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Boolean indexing</li>
@@ -930,10 +989,10 @@ array2d[[0,1]] =&gt;  [[1, 2, 3], [4, 5, 6]]
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">array1d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array1d:&#39;</span><span class="p">,</span> <span class="n">array1d</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array1d&gt;5:&#39;</span><span class="p">,</span> <span class="n">array1d</span><span class="o">&gt;</span><span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'array1d:'</span><span class="p">,</span> <span class="n">array1d</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'array1d&gt;5:'</span><span class="p">,</span> <span class="n">array1d</span><span class="o">&gt;</span><span class="mi">5</span><span class="p">)</span>
 <span class="n">array3</span> <span class="o">=</span> <span class="n">array1d</span><span class="p">[</span><span class="n">array1d</span><span class="o">&gt;</span><span class="mi">5</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array1d&gt;5 boolean indexing values:&#39;</span><span class="p">,</span> <span class="n">array3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'array1d&gt;5 boolean indexing values:'</span><span class="p">,</span> <span class="n">array3</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -996,9 +1055,12 @@ array1d&gt;5 boolean indexing values: [6 7 8 9]
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="6.-Sort-of-matrix---sort(),-argsort()">6. Sort of matrix - sort(), argsort()<a class="anchor-link" href="#6.-Sort-of-matrix---sort(),-argsort()"> </a></h3>
+<h3 id="6.-Sort-of-matrix---sort(),-argsort()">
+<a class="anchor" href="#6.-Sort-of-matrix---sort(),-argsort()" aria-hidden="true"><span class="octicon octicon-link"></span></a>6. Sort of matrix - sort(), argsort()<a class="anchor-link" href="#6.-Sort-of-matrix---sort(),-argsort()"> </a>
+</h3>
 <pre><code>default = ascending sort
 ex) [3,1,9,5] -&gt; [1,3,5,9]    
 Sort by raw or column using axis
@@ -1008,7 +1070,8 @@ argsort() -&gt; Use when an original matrix is sorted and an index for an elemen
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>ndarray.sort()</li>
@@ -1025,11 +1088,11 @@ argsort() -&gt; Use when an original matrix is sorted and an index for an elemen
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">org_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;original_array:&quot;</span><span class="p">,</span> <span class="n">org_array</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"original_array:"</span><span class="p">,</span> <span class="n">org_array</span><span class="p">)</span>
 
 <span class="n">sort_array_1</span> <span class="o">=</span> <span class="n">org_array</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;original_array:&quot;</span><span class="p">,</span> <span class="n">org_array</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;sort_array1:&quot;</span><span class="p">,</span> <span class="n">sort_array_1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"original_array:"</span><span class="p">,</span> <span class="n">org_array</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"sort_array1:"</span><span class="p">,</span> <span class="n">sort_array_1</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -1055,7 +1118,8 @@ sort_array1: None
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>np.sort()</li>
@@ -1072,11 +1136,11 @@ sort_array1: None
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">org_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;original_array:&quot;</span><span class="p">,</span> <span class="n">org_array</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"original_array:"</span><span class="p">,</span> <span class="n">org_array</span><span class="p">)</span>
 
 <span class="n">sort_array_2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">org_array</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;original_array:&quot;</span><span class="p">,</span> <span class="n">org_array</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;sort_array2:&quot;</span><span class="p">,</span> <span class="n">sort_array_1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"original_array:"</span><span class="p">,</span> <span class="n">org_array</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"sort_array2:"</span><span class="p">,</span> <span class="n">sort_array_1</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -1102,7 +1166,8 @@ sort_array2: None
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Descending sort -&gt; np.sort[::-1]</li>
@@ -1119,7 +1184,7 @@ sort_array2: None
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">sort_array1_desc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">org_array</span><span class="p">)[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Descending sort array:&quot;</span><span class="p">,</span> <span class="n">sort_array1_desc</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Descending sort array:"</span><span class="p">,</span> <span class="n">sort_array1_desc</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -1143,7 +1208,8 @@ sort_array2: None
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Sort the 2-dimensional or higher matrix</li>
@@ -1160,13 +1226,13 @@ sort_array2: None
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">array2d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">8</span><span class="p">,</span><span class="mi">12</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;array2d:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">array2d</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'array2d:</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="n">array2d</span><span class="p">)</span>
 
 <span class="n">sort_array2d_axis0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">array2d</span><span class="p">,</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Sorted by raw(axis=0):</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">sort_array2d_axis0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Sorted by raw(axis=0):</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="n">sort_array2d_axis0</span><span class="p">)</span>
 
 <span class="n">sort_array2d_axis1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">array2d</span><span class="p">,</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Sorted by column(axis=1):</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">sort_array2d_axis1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Sorted by column(axis=1):</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="n">sort_array2d_axis1</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -1198,7 +1264,8 @@ Sorted by column(axis=1):
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>argsort() </li>
@@ -1219,7 +1286,7 @@ Sorted by column(axis=1):
 <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">sort_indices</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">org_array</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">sort_array_2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;index for an element of an existing original matrix when it is ascending sorted:&#39;</span><span class="p">,</span> <span class="n">sort_indices</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'index for an element of an existing original matrix when it is ascending sorted:'</span><span class="p">,</span> <span class="n">sort_indices</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -1232,7 +1299,7 @@ Sorted by column(axis=1):
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;class &#39;numpy.ndarray&#39;&gt;
+<pre>&lt;class 'numpy.ndarray'&gt;
 [3 1 9 5]
 [1 3 5 9]
 index for an element of an existing original matrix when it is ascending sorted: [1 0 3 2]
@@ -1258,7 +1325,7 @@ index for an element of an existing original matrix when it is ascending sorted:
 <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">sort_indices</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">org_array</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">sort_array1_desc</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;index for an element of an existing original matrix when it is descending sorted:&#39;</span><span class="p">,</span> <span class="n">sort_indices_desc</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'index for an element of an existing original matrix when it is descending sorted:'</span><span class="p">,</span> <span class="n">sort_indices_desc</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -1271,7 +1338,7 @@ index for an element of an existing original matrix when it is ascending sorted:
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;class &#39;numpy.ndarray&#39;&gt;
+<pre>&lt;class 'numpy.ndarray'&gt;
 [3 1 9 5]
 [9 5 3 1]
 index for an element of an existing original matrix when it is descending sorted: [2 3 0 1]
@@ -1285,13 +1352,17 @@ index for an element of an existing original matrix when it is descending sorted
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="7.---Linear-algebra-operation---Inner-product-and-transposed-matrix">7.   Linear algebra operation - Inner product and transposed matrix<a class="anchor-link" href="#7.---Linear-algebra-operation---Inner-product-and-transposed-matrix"> </a></h3>
+<h3 id="7.---Linear-algebra-operation---Inner-product-and-transposed-matrix">
+<a class="anchor" href="#7.---Linear-algebra-operation---Inner-product-and-transposed-matrix" aria-hidden="true"><span class="octicon octicon-link"></span></a>7.   Linear algebra operation - Inner product and transposed matrix<a class="anchor-link" href="#7.---Linear-algebra-operation---Inner-product-and-transposed-matrix"> </a>
+</h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Inner product -&gt; np.dot()</li>
@@ -1309,7 +1380,7 @@ index for an element of an existing original matrix when it is descending sorted
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]])</span>
 <span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">],[</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">],[</span><span class="mi">11</span><span class="p">,</span><span class="mi">12</span><span class="p">]])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Inner product result:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Inner product result:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -1335,7 +1406,8 @@ index for an element of an existing original matrix when it is descending sorted
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Transposed matrix</li>
@@ -1353,7 +1425,7 @@ index for an element of an existing original matrix when it is descending sorted
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]])</span>
 <span class="n">transpose_mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span> <span class="n">transpose</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Transposed matrix:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">transpose_mat</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Transposed matrix:</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="n">transpose_mat</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -1379,9 +1451,12 @@ index for an element of an existing original matrix when it is descending sorted
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3.---Data-Handling---Pandas"><strong>3.   Data Handling - Pandas</strong><a class="anchor-link" href="#3.---Data-Handling---Pandas"> </a></h2>
+<h2 id="3.---Data-Handling---Pandas">
+<a class="anchor" href="#3.---Data-Handling---Pandas" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>3.   Data Handling - Pandas</strong><a class="anchor-link" href="#3.---Data-Handling---Pandas"> </a>
+</h2>
 <pre><code>Pandas provides a variety of great features to efficiently process 2D data.
 The core object of Pandas is DataFrame
 Before understanding the DataFrame, it is important to understand the index and series
@@ -1405,13 +1480,17 @@ url(Data for this chapter): 'https://www.kaggle.com/c/titanic/data'
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.-Pandas---fundamental-API">1. Pandas - fundamental API<a class="anchor-link" href="#1.-Pandas---fundamental-API"> </a></h3>
+<h3 id="1.-Pandas---fundamental-API">
+<a class="anchor" href="#1.-Pandas---fundamental-API" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. Pandas - fundamental API<a class="anchor-link" href="#1.-Pandas---fundamental-API"> </a>
+</h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>read_csv() - Loading data with DataFrame</li>
@@ -1428,7 +1507,7 @@ url(Data for this chapter): 'https://www.kaggle.com/c/titanic/data'
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="n">titanic_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;train.csv&#39;</span><span class="p">)</span>
+<span class="n">titanic_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'train.csv'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -1438,7 +1517,8 @@ url(Data for this chapter): 'https://www.kaggle.com/c/titanic/data'
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>head() -&gt; Return some data(Default:5)</li>
@@ -1559,7 +1639,8 @@ url(Data for this chapter): 'https://www.kaggle.com/c/titanic/data'
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>shape() -&gt; Return the size of rows and columns in a DataFrame</li>
@@ -1575,7 +1656,7 @@ url(Data for this chapter): 'https://www.kaggle.com/c/titanic/data'
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;DataFrame</span><span class="se">\&#39;</span><span class="s1">s size: &#39;</span><span class="p">,</span> <span class="n">titanic_df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<div class=" highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'DataFrame</span><span class="se">\'</span><span class="s1">s size: '</span><span class="p">,</span> <span class="n">titanic_df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -1588,7 +1669,7 @@ url(Data for this chapter): 'https://www.kaggle.com/c/titanic/data'
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>DataFrame&#39;s size:  (891, 12)
+<pre>DataFrame's size:  (891, 12)
 </pre>
 </div>
 </div>
@@ -1599,7 +1680,8 @@ url(Data for this chapter): 'https://www.kaggle.com/c/titanic/data'
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>info() -&gt; row data size, column data size, data type, Null size</li>
@@ -1628,7 +1710,7 @@ url(Data for this chapter): 'https://www.kaggle.com/c/titanic/data'
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+<pre>&lt;class 'pandas.core.frame.DataFrame'&gt;
 RangeIndex: 891 entries, 0 to 890
 Data columns (total 12 columns):
  #   Column       Non-Null Count  Dtype  
@@ -1657,7 +1739,8 @@ memory usage: 83.7+ KB
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>describe() -&gt; Not Null size, mean, std, min, max, (25%, 50%, 75% values) 
@@ -1811,7 +1894,8 @@ and object-type columns are excluded from the output.  </code></pre>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>value_counts() -&gt; Return the number of data values of a specified column
@@ -1830,7 +1914,7 @@ ex) DataFrame[column].value_counts</code></pre>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Pclass&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Pclass'</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -1859,7 +1943,8 @@ Name: Pclass, dtype: int64</pre>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>sort_values()
@@ -1880,7 +1965,7 @@ Name: Pclass, dtype: int64</pre>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;Pclass&#39;</span><span class="p">,</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">'Pclass'</span><span class="p">,</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -2106,16 +2191,20 @@ Name: Pclass, dtype: int64</pre>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.---Transforming-between-DataFrame,-List,-Dictionary-and-ndarray">2.   Transforming between DataFrame, List, Dictionary and ndarray<a class="anchor-link" href="#2.---Transforming-between-DataFrame,-List,-Dictionary-and-ndarray"> </a></h3>
+<h3 id="2.---Transforming-between-DataFrame,-List,-Dictionary-and-ndarray">
+<a class="anchor" href="#2.---Transforming-between-DataFrame,-List,-Dictionary-and-ndarray" aria-hidden="true"><span class="octicon octicon-link"></span></a>2.   Transforming between DataFrame, List, Dictionary and ndarray<a class="anchor-link" href="#2.---Transforming-between-DataFrame,-List,-Dictionary-and-ndarray"> </a>
+</h3>
 <pre><code>Many API of Scikit-Learn use the ndarray as an input factor
 So, transforming between DataFrame and ndarray occurs very frequently</code></pre>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Transforming ndarray, List to DataFrame
@@ -2136,10 +2225,10 @@ So, transforming between DataFrame and ndarray occurs very frequently</code></pr
 <div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
 <span class="n">array1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">list1</span><span class="p">)</span>
-<span class="n">df_list1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;col1&#39;</span><span class="p">])</span>
-<span class="n">df_array1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">array1</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;col1&#39;</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;List -&gt; DataFrame:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">df_list1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ndarray -&gt; DataFrame:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">df_array1</span><span class="p">)</span>
+<span class="n">df_list1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'col1'</span><span class="p">])</span>
+<span class="n">df_array1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">array1</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'col1'</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"List -&gt; DataFrame:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">df_list1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"ndarray -&gt; DataFrame:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">df_array1</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -2172,7 +2261,8 @@ ndarray -&gt; DataFrame:
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Transforming Dictionary to DataFrame
@@ -2192,9 +2282,9 @@ ndarray -&gt; DataFrame:
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;col1&#39;</span><span class="p">:[</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">],</span> <span class="s1">&#39;col2&#39;</span><span class="p">:[</span><span class="mi">2</span><span class="p">,</span><span class="mi">22</span><span class="p">],</span> <span class="s1">&#39;col3&#39;</span><span class="p">:[</span><span class="mi">3</span><span class="p">,</span><span class="mi">33</span><span class="p">]}</span>
+<div class=" highlight hl-python"><pre><span></span><span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'col1'</span><span class="p">:[</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">],</span> <span class="s1">'col2'</span><span class="p">:[</span><span class="mi">2</span><span class="p">,</span><span class="mi">22</span><span class="p">],</span> <span class="s1">'col3'</span><span class="p">:[</span><span class="mi">3</span><span class="p">,</span><span class="mi">33</span><span class="p">]}</span>
 <span class="n">df_dict</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dictionary -&gt; DataFrame:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">df_dict</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Dictionary -&gt; DataFrame:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">df_dict</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -2221,7 +2311,8 @@ ndarray -&gt; DataFrame:
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Transforming DataFrame to ndarray
@@ -2240,7 +2331,7 @@ ndarray -&gt; DataFrame:
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">array3</span> <span class="o">=</span> <span class="n">df_dict</span><span class="o">.</span><span class="n">values</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;DataFrame -&gt; ndarray:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">array3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"DataFrame -&gt; ndarray:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">array3</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -2266,7 +2357,8 @@ ndarray -&gt; DataFrame:
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Transforming DataFrame to List, Dictionary
@@ -2288,13 +2380,13 @@ ndarray -&gt; DataFrame:
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">list3</span> <span class="o">=</span> <span class="n">df_dict</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;DataFrame -&gt; List:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">list3</span><span class="p">)</span>
-<span class="n">dict3</span> <span class="o">=</span> <span class="n">df_dict</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(</span><span class="s1">&#39;list&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;DataFrame -&gt; Dictionary:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">dict3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"DataFrame -&gt; List:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">list3</span><span class="p">)</span>
+<span class="n">dict3</span> <span class="o">=</span> <span class="n">df_dict</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(</span><span class="s1">'list'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"DataFrame -&gt; Dictionary:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">dict3</span><span class="p">)</span>
 
-<span class="c1">#If don&#39;t use &#39;list&#39; in to_dict</span>
+<span class="c1">#If don't use 'list' in to_dict</span>
 <span class="n">dict_3_error</span> <span class="o">=</span> <span class="n">df_dict</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;DataFrame -&gt; Dictionary(error mode):</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">dict_3_error</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"DataFrame -&gt; Dictionary(error mode):</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">dict_3_error</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -2310,9 +2402,9 @@ ndarray -&gt; DataFrame:
 <pre>DataFrame -&gt; List:
  [[1, 2, 3], [11, 22, 33]]
 DataFrame -&gt; Dictionary:
- {&#39;col1&#39;: [1, 11], &#39;col2&#39;: [2, 22], &#39;col3&#39;: [3, 33]}
+ {'col1': [1, 11], 'col2': [2, 22], 'col3': [3, 33]}
 DataFrame -&gt; Dictionary(error mode):
- {&#39;col1&#39;: {0: 1, 1: 11}, &#39;col2&#39;: {0: 2, 1: 22}, &#39;col3&#39;: {0: 3, 1: 33}}
+ {'col1': {0: 1, 1: 11}, 'col2': {0: 2, 1: 22}, 'col3': {0: 3, 1: 33}}
 </pre>
 </div>
 </div>
@@ -2323,9 +2415,12 @@ DataFrame -&gt; Dictionary(error mode):
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="3.-Delete-Data">3. Delete Data<a class="anchor-link" href="#3.-Delete-Data"> </a></h3>
+<h3 id="3.-Delete-Data">
+<a class="anchor" href="#3.-Delete-Data" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. Delete Data<a class="anchor-link" href="#3.-Delete-Data"> </a>
+</h3>
 <pre><code>DataFrame.drop(labels=None, axis=0, index=None, columns=None, level=None, inplace=False, errors='raise')
 ※Core parameters: labels, axis, inplace
   labels -&gt; column to delete 
@@ -2449,7 +2544,8 @@ DataFrame -&gt; Dictionary(error mode):
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Drop by columns</li>
@@ -2465,7 +2561,7 @@ DataFrame -&gt; Dictionary(error mode):
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_drop_df_column</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;Age&#39;</span><span class="p">,</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_drop_df_column</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">'Age'</span><span class="p">,</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
 <span class="n">titanic_drop_df_column</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
@@ -2539,7 +2635,8 @@ DataFrame -&gt; Dictionary(error mode):
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Drop by rows</li>
@@ -2631,16 +2728,20 @@ DataFrame -&gt; Dictionary(error mode):
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="4.-Index">4. Index<a class="anchor-link" href="#4.-Index"> </a></h3>
+<h3 id="4.-Index">
+<a class="anchor" href="#4.-Index" aria-hidden="true"><span class="octicon octicon-link"></span></a>4. Index<a class="anchor-link" href="#4.-Index"> </a>
+</h3>
 <pre><code>An object that uniquely identifies a record of DataFrame, Series.
 Index objects cannot be changed</code></pre>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Extract index</li>
@@ -2656,7 +2757,7 @@ Index objects cannot be changed</code></pre>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;train.csv&#39;</span><span class="p">)</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'train.csv'</span><span class="p">)</span>
 <span class="n">indexes</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="o">.</span><span class="n">index</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">indexes</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">indexes</span><span class="o">.</span><span class="n">values</span><span class="p">[:</span><span class="mi">10</span><span class="p">])</span>
@@ -2684,7 +2785,8 @@ Index objects cannot be changed</code></pre>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>reset_index()
@@ -2823,15 +2925,15 @@ When reset_index() is applied to a Series, DataFrame is converted.
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;### Before reset_index ###&quot;</span><span class="p">)</span>
-<span class="n">value_counts</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Pclass&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<div class=" highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"### Before reset_index ###"</span><span class="p">)</span>
+<span class="n">value_counts</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Pclass'</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">value_counts</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;type =&gt; &quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">value_counts</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"type =&gt; "</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">value_counts</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;### After reset_index ###&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"### After reset_index ###"</span><span class="p">)</span>
 <span class="n">new_value_counts</span> <span class="o">=</span> <span class="n">value_counts</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">inplace</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">new_value_counts</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;type =&gt; &quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">new_value_counts</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"type =&gt; "</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">new_value_counts</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -2849,14 +2951,14 @@ When reset_index() is applied to a Series, DataFrame is converted.
 1    216
 2    184
 Name: Pclass, dtype: int64
-type =&gt;  &lt;class &#39;pandas.core.series.Series&#39;&gt;
+type =&gt;  &lt;class 'pandas.core.series.Series'&gt;
 
 ### After reset_index ###
    index  Pclass
 0      3     491
 1      1     216
 2      2     184
-type =&gt;  &lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+type =&gt;  &lt;class 'pandas.core.frame.DataFrame'&gt;
 </pre>
 </div>
 </div>
@@ -2874,10 +2976,10 @@ type =&gt;  &lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;### (drop = True) ###&quot;</span><span class="p">)</span>
+<div class=" highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"### (drop = True) ###"</span><span class="p">)</span>
 <span class="n">new_value_counts2</span> <span class="o">=</span> <span class="n">value_counts</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">inplace</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">drop</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">new_value_counts2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;type =&gt; &quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">new_value_counts2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"type =&gt; "</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">new_value_counts2</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -2895,7 +2997,7 @@ type =&gt;  &lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
 1    216
 2    184
 Name: Pclass, dtype: int64
-type =&gt;  &lt;class &#39;pandas.core.series.Series&#39;&gt;
+type =&gt;  &lt;class 'pandas.core.series.Series'&gt;
 </pre>
 </div>
 </div>
@@ -2906,9 +3008,12 @@ type =&gt;  &lt;class &#39;pandas.core.series.Series&#39;&gt;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="5.---Data-Selection-and-Filtering">5.   Data Selection and Filtering<a class="anchor-link" href="#5.---Data-Selection-and-Filtering"> </a></h3>
+<h3 id="5.---Data-Selection-and-Filtering">
+<a class="anchor" href="#5.---Data-Selection-and-Filtering" aria-hidden="true"><span class="octicon octicon-link"></span></a>5.   Data Selection and Filtering<a class="anchor-link" href="#5.---Data-Selection-and-Filtering"> </a>
+</h3>
 <pre><code>iloc[] -&gt; Location-based indexing
           Use integar type as row and column value
           Don't provide boolean indexing
@@ -2920,7 +3025,8 @@ DataFrame[] -&gt; Column name, Index can go into []operator</code></pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Extract column data - Column name</li>
@@ -2936,13 +3042,13 @@ DataFrame[] -&gt; Column name, Index can go into []operator</code></pre>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Single column extraction&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Pclass&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+<div class=" highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Single column extraction"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Pclass'</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Several columns extraction&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">titanic_df</span><span class="p">[[</span><span class="s1">&#39;Pclass&#39;</span><span class="p">,</span><span class="s1">&#39;Survived&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Several columns extraction"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">titanic_df</span><span class="p">[[</span><span class="s1">'Pclass'</span><span class="p">,</span><span class="s1">'Survived'</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
 
-<span class="c1">#print(titanic_df[0])-&gt; If you just enter a number value, it&#39;s an error.</span>
+<span class="c1">#print(titanic_df[0])-&gt; If you just enter a number value, it's an error.</span>
 </pre></div>
 
     </div>
@@ -2976,7 +3082,8 @@ Several columns extraction
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Extract row data - Slicing</li>
@@ -3082,7 +3189,8 @@ Several columns extraction
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Extract data by boolean indexing</li>
@@ -3098,7 +3206,7 @@ Several columns extraction
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Pclass&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">3</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Pclass'</span><span class="p">]</span><span class="o">==</span><span class="mi">3</span>
 </pre></div>
 
     </div>
@@ -3142,7 +3250,7 @@ Name: Pclass, Length: 891, dtype: bool</pre>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_df</span><span class="p">[</span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Pclass&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_df</span><span class="p">[</span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Pclass'</span><span class="p">]</span><span class="o">==</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -3247,7 +3355,8 @@ Name: Pclass, Length: 891, dtype: bool</pre>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>iloc</li>
@@ -3263,10 +3372,10 @@ Name: Pclass, Length: 891, dtype: bool</pre>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:[</span><span class="s1">&#39;Chulmin&#39;</span><span class="p">,</span> <span class="s1">&#39;Eunkyung&#39;</span><span class="p">,</span> <span class="s1">&#39;Jinwoong&#39;</span><span class="p">,</span> <span class="s1">&#39;Soobeom&#39;</span><span class="p">],</span>
-        <span class="s1">&#39;Year&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2011</span><span class="p">,</span> <span class="mi">2016</span><span class="p">,</span> <span class="mi">2015</span><span class="p">,</span> <span class="mi">2015</span><span class="p">],</span>
-        <span class="s1">&#39;Gender&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Male&#39;</span><span class="p">,</span> <span class="s1">&#39;Female&#39;</span><span class="p">,</span> <span class="s1">&#39;Male&#39;</span><span class="p">,</span> <span class="s1">&#39;Male&#39;</span><span class="p">]}</span>
-<span class="n">data_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;one&#39;</span><span class="p">,</span> <span class="s1">&#39;two&#39;</span><span class="p">,</span> <span class="s1">&#39;three&#39;</span><span class="p">,</span> <span class="s1">&#39;four&#39;</span><span class="p">])</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'name'</span><span class="p">:[</span><span class="s1">'Chulmin'</span><span class="p">,</span> <span class="s1">'Eunkyung'</span><span class="p">,</span> <span class="s1">'Jinwoong'</span><span class="p">,</span> <span class="s1">'Soobeom'</span><span class="p">],</span>
+        <span class="s1">'Year'</span><span class="p">:</span> <span class="p">[</span><span class="mi">2011</span><span class="p">,</span> <span class="mi">2016</span><span class="p">,</span> <span class="mi">2015</span><span class="p">,</span> <span class="mi">2015</span><span class="p">],</span>
+        <span class="s1">'Gender'</span><span class="p">:</span> <span class="p">[</span><span class="s1">'Male'</span><span class="p">,</span> <span class="s1">'Female'</span><span class="p">,</span> <span class="s1">'Male'</span><span class="p">,</span> <span class="s1">'Male'</span><span class="p">]}</span>
+<span class="n">data_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'one'</span><span class="p">,</span> <span class="s1">'two'</span><span class="p">,</span> <span class="s1">'three'</span><span class="p">,</span> <span class="s1">'four'</span><span class="p">])</span>
 <span class="n">data_df</span>
 </pre></div>
 
@@ -3349,7 +3458,7 @@ Name: Pclass, Length: 891, dtype: bool</pre>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;data_df.iloc[0,0]:</span><span class="si">{0}</span><span class="s2">, data_df.iloc[1,1]:</span><span class="si">{1}</span><span class="s2">, data_df.iloc[2,2]:</span><span class="si">{2}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">data_df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="n">data_df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span><span class="n">data_df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">]))</span>
+<div class=" highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"data_df.iloc[0,0]:</span><span class="si">{0}</span><span class="s2">, data_df.iloc[1,1]:</span><span class="si">{1}</span><span class="s2">, data_df.iloc[2,2]:</span><span class="si">{2}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">data_df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="n">data_df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span><span class="n">data_df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">]))</span>
 </pre></div>
 
     </div>
@@ -3484,7 +3593,7 @@ Name: Pclass, Length: 891, dtype: bool</pre>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;Chulmin&#39;</pre>
+<pre>'Chulmin'</pre>
 </div>
 
 </div>
@@ -3530,7 +3639,8 @@ Name: name, dtype: object</pre>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>loc</li>
@@ -3546,7 +3656,7 @@ Name: name, dtype: object</pre>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">data_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;one&#39;</span><span class="p">,</span><span class="s1">&#39;name&#39;</span><span class="p">]</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">data_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">'one'</span><span class="p">,</span><span class="s1">'name'</span><span class="p">]</span>
 </pre></div>
 
     </div>
@@ -3561,7 +3671,7 @@ Name: name, dtype: object</pre>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;Chulmin&#39;</pre>
+<pre>'Chulmin'</pre>
 </div>
 
 </div>
@@ -3579,7 +3689,7 @@ Name: name, dtype: object</pre>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">data_df_reset</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;name&#39;</span><span class="p">]</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">data_df_reset</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="s1">'name'</span><span class="p">]</span>
 </pre></div>
 
     </div>
@@ -3594,7 +3704,7 @@ Name: name, dtype: object</pre>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;Chulmin&#39;</pre>
+<pre>'Chulmin'</pre>
 </div>
 
 </div>
@@ -3612,7 +3722,7 @@ Name: name, dtype: object</pre>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">data_df_reset</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">]</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">data_df_reset</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span> <span class="s1">'name'</span><span class="p">]</span>
 </pre></div>
 
     </div>
@@ -3641,7 +3751,8 @@ Name: name, dtype: object</pre>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>loc with boolean index</li>
@@ -3657,7 +3768,7 @@ Name: name, dtype: object</pre>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">60</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">,</span><span class="s1">&#39;Age&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Age'</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">60</span><span class="p">,</span> <span class="p">[</span><span class="s1">'Name'</span><span class="p">,</span><span class="s1">'Age'</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -3722,13 +3833,17 @@ Name: name, dtype: object</pre>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="6.---Sorting,-Aggregation,-GroupBy">6.   Sorting, Aggregation, GroupBy<a class="anchor-link" href="#6.---Sorting,-Aggregation,-GroupBy"> </a></h3>
+<h3 id="6.---Sorting,-Aggregation,-GroupBy">
+<a class="anchor" href="#6.---Sorting,-Aggregation,-GroupBy" aria-hidden="true"><span class="octicon octicon-link"></span></a>6.   Sorting, Aggregation, GroupBy<a class="anchor-link" href="#6.---Sorting,-Aggregation,-GroupBy"> </a>
+</h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>sort_values( )
@@ -3750,7 +3865,7 @@ Name: name, dtype: object</pre>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_sorted</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">])</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_sorted</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">'Name'</span><span class="p">])</span>
 <span class="n">titanic_sorted</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 
@@ -3863,7 +3978,7 @@ Name: name, dtype: object</pre>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_sorted</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Pclass&#39;</span><span class="p">,</span> <span class="s1">&#39;Name&#39;</span><span class="p">],</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_sorted</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">'Pclass'</span><span class="p">,</span> <span class="s1">'Name'</span><span class="p">],</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
 <span class="n">titanic_sorted</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 
@@ -3969,7 +4084,8 @@ Name: name, dtype: object</pre>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Aggregation( )
@@ -4033,7 +4149,7 @@ dtype: int64</pre>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_df</span><span class="p">[[</span><span class="s1">&#39;Age&#39;</span><span class="p">,</span><span class="s1">&#39;Fare&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_df</span><span class="p">[[</span><span class="s1">'Age'</span><span class="p">,</span><span class="s1">'Fare'</span><span class="p">]]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -4061,7 +4177,8 @@ dtype: float64</pre>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>groupby( )
@@ -4080,7 +4197,7 @@ If the aggregation is applied to the result of applying the groupby to the DataF
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_groupby</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="s1">&#39;Pclass&#39;</span><span class="p">)</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_groupby</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="s1">'Pclass'</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">titanic_groupby</span><span class="p">))</span>
 </pre></div>
 
@@ -4094,7 +4211,7 @@ If the aggregation is applied to the result of applying the groupby to the DataF
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;class &#39;pandas.core.groupby.generic.DataFrameGroupBy&#39;&gt;
+<pre>&lt;class 'pandas.core.groupby.generic.DataFrameGroupBy'&gt;
 </pre>
 </div>
 </div>
@@ -4112,7 +4229,7 @@ If the aggregation is applied to the result of applying the groupby to the DataF
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_groupby</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Pclass&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_groupby</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'Pclass'</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
 <span class="n">titanic_groupby</span>
 </pre></div>
 
@@ -4235,7 +4352,7 @@ If the aggregation is applied to the result of applying the groupby to the DataF
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_groupby</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Pclass&#39;</span><span class="p">)[[</span><span class="s1">&#39;PassengerId&#39;</span><span class="p">,</span><span class="s1">&#39;Survived&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_groupby</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'Pclass'</span><span class="p">)[[</span><span class="s1">'PassengerId'</span><span class="p">,</span><span class="s1">'Survived'</span><span class="p">]]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
 <span class="n">titanic_groupby</span>
 </pre></div>
 
@@ -4313,7 +4430,7 @@ If the aggregation is applied to the result of applying the groupby to the DataF
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Pclass&#39;</span><span class="p">)[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">agg</span><span class="p">([</span><span class="nb">max</span><span class="p">,</span><span class="nb">min</span><span class="p">])</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'Pclass'</span><span class="p">)[</span><span class="s1">'Age'</span><span class="p">]</span><span class="o">.</span><span class="n">agg</span><span class="p">([</span><span class="nb">max</span><span class="p">,</span><span class="nb">min</span><span class="p">])</span>
 </pre></div>
 
     </div>
@@ -4390,8 +4507,8 @@ If the aggregation is applied to the result of applying the groupby to the DataF
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">agg_format</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Age&#39;</span><span class="p">:</span><span class="s1">&#39;max&#39;</span><span class="p">,</span> <span class="s1">&#39;SibSp&#39;</span><span class="p">:</span><span class="s1">&#39;sum&#39;</span><span class="p">,</span> <span class="s1">&#39;Fare&#39;</span><span class="p">:</span><span class="s1">&#39;mean&#39;</span><span class="p">}</span>
-<span class="n">titanic_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Pclass&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="n">agg_format</span><span class="p">)</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">agg_format</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'Age'</span><span class="p">:</span><span class="s1">'max'</span><span class="p">,</span> <span class="s1">'SibSp'</span><span class="p">:</span><span class="s1">'sum'</span><span class="p">,</span> <span class="s1">'Fare'</span><span class="p">:</span><span class="s1">'mean'</span><span class="p">}</span>
+<span class="n">titanic_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'Pclass'</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="n">agg_format</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -4466,9 +4583,12 @@ If the aggregation is applied to the result of applying the groupby to the DataF
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="7.---Process-missing-data">7.   Process missing data<a class="anchor-link" href="#7.---Process-missing-data"> </a></h3>
+<h3 id="7.---Process-missing-data">
+<a class="anchor" href="#7.---Process-missing-data" aria-hidden="true"><span class="octicon octicon-link"></span></a>7.   Process missing data<a class="anchor-link" href="#7.---Process-missing-data"> </a>
+</h3>
 <pre><code>missing data = Null(NaN)
 isna() -&gt; Check if it's NaN or not
 fillna() -&gt; Replace NaN with another value</code></pre>
@@ -4476,7 +4596,8 @@ fillna() -&gt; Replace NaN with another value</code></pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>isna( )</li>
@@ -4642,7 +4763,8 @@ dtype: int64</pre>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>fillna( )</li>
@@ -4658,7 +4780,7 @@ dtype: int64</pre>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Cabin&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Cabin&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;C000&#39;</span><span class="p">)</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Cabin'</span><span class="p">]</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Cabin'</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">'C000'</span><span class="p">)</span>
 <span class="n">titanic_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 
@@ -4771,8 +4893,8 @@ dtype: int64</pre>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
-<span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Embarked&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Embarked&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Embarked&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;S&#39;</span><span class="p">))</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Age'</span><span class="p">]</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Age'</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Age'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+<span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Embarked'</span><span class="p">]</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Embarked'</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Embarked'</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">'S'</span><span class="p">))</span>
 <span class="n">titanic_df</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 </pre></div>
 
@@ -4811,13 +4933,17 @@ dtype: int64</pre>
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="8.---Data-processing-with-apply-lambda">8.   Data processing with apply lambda<a class="anchor-link" href="#8.---Data-processing-with-apply-lambda"> </a></h3>
+<h3 id="8.---Data-processing-with-apply-lambda">
+<a class="anchor" href="#8.---Data-processing-with-apply-lambda" aria-hidden="true"><span class="octicon octicon-link"></span></a>8.   Data processing with apply lambda<a class="anchor-link" href="#8.---Data-processing-with-apply-lambda"> </a>
+</h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>lambda
@@ -4840,10 +4966,10 @@ dtype: int64</pre>
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="k">def</span> <span class="nf">get_square</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
   <span class="k">return</span> <span class="n">a</span><span class="o">**</span><span class="mi">2</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;general function&#39;s result:&quot;</span><span class="p">,</span> <span class="n">get_square</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"general function's result:"</span><span class="p">,</span> <span class="n">get_square</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
 
 <span class="n">lambda_square</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;lambda function&#39;s result:&quot;</span><span class="p">,</span> <span class="n">lambda_square</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"lambda function's result:"</span><span class="p">,</span> <span class="n">lambda_square</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -4856,8 +4982,8 @@ dtype: int64</pre>
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>general function&#39;s result: 9
-lambda function&#39;s result: 9
+<pre>general function's result: 9
+lambda function's result: 9
 </pre>
 </div>
 </div>
@@ -4910,8 +5036,8 @@ lambda function&#39;s result: 9
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Name_len&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
-<span class="n">titanic_df</span><span class="p">[[</span><span class="s1">&#39;Name&#39;</span><span class="p">,</span><span class="s1">&#39;Name_len&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Name_len'</span><span class="p">]</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Name'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="n">titanic_df</span><span class="p">[[</span><span class="s1">'Name'</span><span class="p">,</span><span class="s1">'Name_len'</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -4983,8 +5109,8 @@ lambda function&#39;s result: 9
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Child_Adult&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">&#39;Child&#39;</span> <span class="k">if</span> <span class="n">x</span><span class="o">&lt;=</span><span class="mi">15</span> <span class="k">else</span> <span class="s1">&#39;Adult&#39;</span><span class="p">)</span>
-<span class="n">titanic_df</span><span class="p">[[</span><span class="s1">&#39;Age&#39;</span><span class="p">,</span><span class="s1">&#39;Child_Adult&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Child_Adult'</span><span class="p">]</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Age'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">'Child'</span> <span class="k">if</span> <span class="n">x</span><span class="o">&lt;=</span><span class="mi">15</span> <span class="k">else</span> <span class="s1">'Adult'</span><span class="p">)</span>
+<span class="n">titanic_df</span><span class="p">[[</span><span class="s1">'Age'</span><span class="p">,</span><span class="s1">'Child_Adult'</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -5066,8 +5192,8 @@ lambda function&#39;s result: 9
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Age_cat&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">&#39;Child&#39;</span> <span class="k">if</span> <span class="n">x</span><span class="o">&lt;=</span><span class="mi">15</span> <span class="k">else</span> <span class="p">(</span><span class="s1">&#39;Adult&#39;</span> <span class="k">if</span> <span class="n">x</span><span class="o">&lt;=</span><span class="mi">60</span> <span class="k">else</span> <span class="s1">&#39;Elderly&#39;</span><span class="p">))</span>
-<span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Age_cat&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Age_cat'</span><span class="p">]</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Age'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">'Child'</span> <span class="k">if</span> <span class="n">x</span><span class="o">&lt;=</span><span class="mi">15</span> <span class="k">else</span> <span class="p">(</span><span class="s1">'Adult'</span> <span class="k">if</span> <span class="n">x</span><span class="o">&lt;=</span><span class="mi">60</span> <span class="k">else</span> <span class="s1">'Elderly'</span><span class="p">))</span>
+<span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Age_cat'</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -5104,18 +5230,18 @@ Name: Age_cat, dtype: int64</pre>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="k">def</span> <span class="nf">get_category</span><span class="p">(</span><span class="n">age</span><span class="p">):</span>
-  <span class="n">cat</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
-  <span class="k">if</span> <span class="n">age</span><span class="o">&lt;=</span><span class="mi">15</span><span class="p">:</span> <span class="n">cat</span> <span class="o">=</span> <span class="s1">&#39;Baby&#39;</span>
-  <span class="k">elif</span> <span class="n">age</span><span class="o">&lt;=</span><span class="mi">12</span><span class="p">:</span> <span class="n">cat</span> <span class="o">=</span> <span class="s1">&#39;Child&#39;</span>
-  <span class="k">elif</span> <span class="n">age</span><span class="o">&lt;=</span><span class="mi">18</span><span class="p">:</span> <span class="n">cat</span> <span class="o">=</span> <span class="s1">&#39;Teenager&#39;</span>
-  <span class="k">elif</span> <span class="n">age</span><span class="o">&lt;=</span><span class="mi">25</span><span class="p">:</span> <span class="n">cat</span> <span class="o">=</span> <span class="s1">&#39;Student&#39;</span>
-  <span class="k">elif</span> <span class="n">age</span><span class="o">&lt;=</span><span class="mi">35</span><span class="p">:</span> <span class="n">cat</span> <span class="o">=</span> <span class="s1">&#39;Young Adult&#39;</span>
-  <span class="k">elif</span> <span class="n">age</span><span class="o">&lt;=</span><span class="mi">60</span><span class="p">:</span> <span class="n">cat</span> <span class="o">=</span> <span class="s1">&#39;Adult&#39;</span>
-  <span class="k">else</span><span class="p">:</span> <span class="n">cat</span> <span class="o">=</span> <span class="s1">&#39;Elderly&#39;</span>
+  <span class="n">cat</span> <span class="o">=</span> <span class="s1">''</span>
+  <span class="k">if</span> <span class="n">age</span><span class="o">&lt;=</span><span class="mi">15</span><span class="p">:</span> <span class="n">cat</span> <span class="o">=</span> <span class="s1">'Baby'</span>
+  <span class="k">elif</span> <span class="n">age</span><span class="o">&lt;=</span><span class="mi">12</span><span class="p">:</span> <span class="n">cat</span> <span class="o">=</span> <span class="s1">'Child'</span>
+  <span class="k">elif</span> <span class="n">age</span><span class="o">&lt;=</span><span class="mi">18</span><span class="p">:</span> <span class="n">cat</span> <span class="o">=</span> <span class="s1">'Teenager'</span>
+  <span class="k">elif</span> <span class="n">age</span><span class="o">&lt;=</span><span class="mi">25</span><span class="p">:</span> <span class="n">cat</span> <span class="o">=</span> <span class="s1">'Student'</span>
+  <span class="k">elif</span> <span class="n">age</span><span class="o">&lt;=</span><span class="mi">35</span><span class="p">:</span> <span class="n">cat</span> <span class="o">=</span> <span class="s1">'Young Adult'</span>
+  <span class="k">elif</span> <span class="n">age</span><span class="o">&lt;=</span><span class="mi">60</span><span class="p">:</span> <span class="n">cat</span> <span class="o">=</span> <span class="s1">'Adult'</span>
+  <span class="k">else</span><span class="p">:</span> <span class="n">cat</span> <span class="o">=</span> <span class="s1">'Elderly'</span>
   <span class="k">return</span> <span class="n">cat</span>
 
-<span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Age_cat&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">get_category</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
-<span class="n">titanic_df</span><span class="p">[[</span><span class="s1">&#39;Age&#39;</span><span class="p">,</span><span class="s1">&#39;Age_cat&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Age_cat'</span><span class="p">]</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Age'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">get_category</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="n">titanic_df</span><span class="p">[[</span><span class="s1">'Age'</span><span class="p">,</span><span class="s1">'Age_cat'</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -5194,7 +5320,15 @@ Name: Age_cat, dtype: int64</pre>
 
 
 
-  </div><a class="u-url" href="/HowneeBlog/2021/10/16/_10_10_Understanding_of_ML.html" hidden></a>
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="sehwan1214/HowneeBlog"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/HowneeBlog/jupyter/machine%20learning/2021/10/16/_10_10_Understanding_of_ML.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
